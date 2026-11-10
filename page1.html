@@ -1,0 +1,760 @@
+
+
+<!doctype html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary-50: #3B060A;
+            --color-primary-100: #8A0000;
+            --color-primary-200: #C83F12;
+            --color-primary-300: #FFF287;
+
+            --color-main-4: #000000;
+            --color-main-3: #830000;
+            --color-main-2: #BC0202;
+            --color-main-1: #FF0000;
+
+            --font-prompt: 'Prompt', sans-serif;
+        }
+
+    </style>
+
+</head>
+
+<body class="bg-gray-100 font-prompt">
+    <img src="โลโก้/banner.png" alt="แบนเนอร์">
+
+    <nav class="bg-primary-50 text-white p-4">
+        <div class="flex lg:flex-row flex-col justify-between items-center">
+
+            <h1 class="text-xl font-bold">อ่านแล้วหม่ำไหม</h1>
+
+            <div class="flex gap-6">
+                <a href="#อาหาร" class="hover:text-primary-300">อาหารคาว</a>
+                <a href="#ของหวาน" class="hover:text-primary-300">ของหวาน</a>
+                <a href="#น้ำ" class="hover:text-primary-300">เครื่องดื่ม</a>
+                <a href="#ผลไม้" class="hover:text-primary-300">ผลไม้</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <h1 id="อาหาร" class="lg:text-4xl md:text-xl sm:text-lg text-2xl font-bold text-center mt-8 ">
+        อาหารคาว
+    </h1>
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 ">
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/salmon.png" alt="แซลมอน">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                แซลมอนดอง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Marinated Salmon
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿250
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/shrimp.png" alt="กุ้งเผา">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                กุ้งเผา
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Grilled Shrimp
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿250
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/chicken.png" alt="ไก่ยาง">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ไก่ยาง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Grilled Chicken
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿200
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/papayasalad.png" alt="ส้มตำ">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ส้มตำ
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Papaya Salad
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/goong.png" alt="ต้มยำกุ้ง">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ต้มยำกุ้ง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Tom Yum Goong
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿250
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/spicestew.png" alt="พะโล้">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                พะโล้
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Spice Stew
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿150
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/clearsoup.png" alt="ต้มจืด">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ต้มจืด
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Clear Soup
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿100
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="อาหารคาว/fish.png" alt="ปลาสามรส">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ปลาสามรส
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Three-Flavored Fish
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿350
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+    </div>
+
+    <h1 id="ของหวาน" class="lg:text-4xl md:text-xl sm:text-lg text-2xl font-bold text-center mt-8 ">
+        ของหวาน
+    </h1>
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 ">
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/pudding.png" alt="พุดดิ้ง">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                พุดดิ้ง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Pudding
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/eggtart.png" alt="ทาร์ตไข่">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ทาร์ตไข่
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Egg Tart
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/filledbrea.png" alt="ขนมปังไส้เยิ้ม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ขนมปังไส้เยิ้ม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Melty-Filled Bread
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿120
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/icecream.png" alt="ไอติม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ไอติม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Ice Cream
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿180
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/icecreambread.png" alt="ขนมปังไอติม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ขนมปังไอติม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Ice Cream Bread
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿150
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/brownie.png" alt="คุกกี้บราวนี่">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                คุกกี้บราวนี่
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Brownie Cookies
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿100
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/macaron.png" alt="มาการอง">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                มาการอง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Macaron
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿250
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ของหวาน/orangepie.png" alt="พายส้ม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                พายส้ม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Orange Pie
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿350
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+        
+
+    </div>
+    <h1 id="น้ำ" class="lg:text-4xl md:text-xl sm:text-lg text-2xl font-bold text-center mt-8 ">
+        เครื่องดื่ม
+    </h1>
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 ">
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/strawberrymilk.png" alt="นมสตรอว์เบอร์รี">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                นมสตรอว์เบอร์รี
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Strawberry Milk
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿110
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/matcha.png" alt="มัทฉะ">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                มัทฉะ
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Matcha
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿150
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/cocoa.png" alt="โกโก้">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                โกโก้
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Cocoa
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿110
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/coffee.png"กาแฟ">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                กาแฟ
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Coffee
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/limesoda.png" alt="น้ำมะนาวโซดา">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                น้ำมะนาวโซดา
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Lime Soda
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/bluehawaii.png" alt="บลูฮาวาย">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                บลูฮาวาย
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Blue Hawaii
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/orangejuice.png" alt="น้ำส้ม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                น้ำส้ม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Orange Juice
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="เครื่องดื่ม/watermelon.png" alt="น้ำแตงโมปั่น">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                น้ำแตงโมปั่น
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Watermelon Smoothie
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿80
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+    </div>
+    <h1 id="ผลไม้" class="lg:text-4xl md:text-xl sm:text-lg text-2xl font-bold text-center mt-8 ">
+        ผลไม้
+    </h1>
+
+    <div class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-4 ">
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/watermelon01.png" alt="แตงโม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                แตงโม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Watermelon
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/mango.png" alt="มะม่วง">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                มะม่วง
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Mango
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/orange.png" alt="ส้ม">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                ส้ม
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Orange
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/grape.png" alt="องุ่น">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                องุ่น
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Grape
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿150
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/strawberry.png" alt="สตรอว์เบอร์รี">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                สตรอว์เบอร์รี
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Strawberry
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿180
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/banana.png" alt="กล้วย">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                กล้วย
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Banana
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿110
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/pineapple.png" alt="สัปปะรด">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                สัปปะรด
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Pineapple
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-4 m-4">
+            <div class="bg-primary-300 rounded-md text-center">
+                <img src="ผลไม้/apple.png" alt="แอปเปิ้ล">
+            </div>
+            <h2 class="text-xl font-semibold mt-4">
+                แอปเปิ้ล
+            </h2>
+
+            <p class="text-gray-600 mt-2 md:block hidden ">
+                Apple
+            </p>
+
+            <p class="text-primary-100 font-bold mt-3">
+                ฿60
+            </p>
+
+            <button class="bg-primary-200 text-white px-4 py-2 rounded-md mt-4 hover:bg-primary-100">
+                สั่งซื้อตอนนี้
+            </button>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
